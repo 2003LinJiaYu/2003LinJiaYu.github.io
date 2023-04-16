@@ -6,7 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hw4</title>
+
+    <script>
+      var title = "This is page2";
+      var i = 0;
+      var timer = setInterval(function() {
+        if (i < title.length) {
+          document.title = title.substr(0, i + 1);
+          i++;
+        }
+      }, 210);
+    </script>
+    
     <style>
         .centered {
           font-family: Comic Sans MS;
